@@ -4,7 +4,7 @@
       "name": "COTIS 체류자격 오류 (-9999)",
       "priority": 1,
       "request": {
-        "method": "GET",
+        "method": "ANY",
         "urlPath": "/ma0/mna/mrgapi/selectCotisMmaListApi.do",
         "queryParameters": {
           "STAY_QLFC_CD": {
@@ -29,7 +29,7 @@
       "name": "COTIS 시스템 에러 (-1)",
       "priority": 1,
       "request": {
-        "method": "GET",
+        "method": "ANY",
         "urlPath": "/ma0/mna/mrgapi/selectCotisMmaListApi.do",
         "queryParameters": {
           "APID": {
@@ -54,7 +54,7 @@
       "name": "COTIS 출입관리 정상 응답",
       "priority": 10,
       "request": {
-        "method": "GET",
+        "method": "ANY",
         "urlPath": "/ma0/mna/mrgapi/selectCotisMmaListApi.do"
       },
       "response": {
