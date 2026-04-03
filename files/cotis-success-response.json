@@ -1,0 +1,22 @@
+{
+  "RESULT_CODE": "0",
+  "RESULT_COUNT": "1",
+  "RESULT_MESSAGE": "정상",
+  "DataList": [
+    {
+      "WRK_DT": "20250916",
+      "CTRT_NO": "12345678901234",
+      "HR_RGS_NO": 1001,
+      "FRM_CD": "FIRM001",
+      "FRM_NM": "테스트업체",
+      "JKD_CD": "01",
+      "NATN_CD": "KR",
+      "SEX_CD": "M",
+      "NEW_YN": "N",
+      "AGE_SE": "30",
+      "STAY_QLFC_CD": "01",
+      "WRK_STR_TM": "20250916090000000000000000000",
+      "WRK_END_TM": "20250916180000000000000000000"
+    }
+  ]
+}

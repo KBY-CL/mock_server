@@ -1,0 +1,66 @@
+{
+  "mappings": [
+    {
+      "name": "COTIS 체류자격 오류 (-9999)",
+      "request": {
+        "method": "POST",
+        "url": "/ma0/mna/mrgapi/selectCotisMmaListApi.do",
+        "bodyPatterns": [
+          {
+            "matchesJsonPath": "$[?(@.STAY_QLFC_CD == '99')]"
+          }
+        ]
+      },
+      "response": {
+        "status": 200,
+        "headers": {
+          "Content-Type": "application/json"
+        },
+        "jsonBody": {
+          "RESULT_CODE": "-9999",
+          "RESULT_COUNT": "0",
+          "RESULT_MESSAGE": "체류자격 각 항목을 확인 하세요.",
+          "DataList": "[]"
+        }
+      }
+    },
+    {
+      "name": "COTIS 시스템 에러 (-1)",
+      "request": {
+        "method": "POST",
+        "url": "/ma0/mna/mrgapi/selectCotisMmaListApi.do",
+        "bodyPatterns": [
+          {
+            "matchesJsonPath": "$[?(@.APID == 'ERROR')]"
+          }
+        ]
+      },
+      "response": {
+        "status": 200,
+        "headers": {
+          "Content-Type": "application/json"
+        },
+        "jsonBody": {
+          "RESULT_CODE": "-1",
+          "RESULT_COUNT": "0",
+          "RESULT_MESSAGE": "시스템 에러",
+          "DataList": "[]"
+        }
+      }
+    },
+    {
+      "name": "COTIS 출입관리 정상 응답",
+      "request": {
+        "method": "POST",
+        "url": "/ma0/mna/mrgapi/selectCotisMmaListApi.do"
+      },
+      "response": {
+        "status": 200,
+        "headers": {
+          "Content-Type": "application/json"
+        },
+        "bodyFileName": "cotis-success-response.json"
+      }
+    }
+  ]
+}
