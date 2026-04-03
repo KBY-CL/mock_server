@@ -5,7 +5,7 @@
       "priority": 1,
       "request": {
         "method": "GET",
-        "url": "/ma0/mna/mrgapi/selectCotisMmaListApi.do",
+        "urlPath": "/ma0/mna/mrgapi/selectCotisMmaListApi.do",
         "queryParameters": {
           "STAY_QLFC_CD": {
             "equalTo": "99"
@@ -30,7 +30,7 @@
       "priority": 1,
       "request": {
         "method": "GET",
-        "url": "/ma0/mna/mrgapi/selectCotisMmaListApi.do",
+        "urlPath": "/ma0/mna/mrgapi/selectCotisMmaListApi.do",
         "queryParameters": {
           "APID": {
             "equalTo": "ERROR"
@@ -55,7 +55,7 @@
       "priority": 10,
       "request": {
         "method": "GET",
-        "url": "/ma0/mna/mrgapi/selectCotisMmaListApi.do"
+        "urlPath": "/ma0/mna/mrgapi/selectCotisMmaListApi.do"
       },
       "response": {
         "status": 200,
